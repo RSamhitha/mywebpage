@@ -1,0 +1,276 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header and Navigation Bar */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #004d99;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0066cc;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat', sans-serif;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 700;
+}
+
+header nav a:hover {
+    color: #ffcc00;
+}
+
+/* Section Styles */
+section {
+    width: 100%;
+    padding: 40px 10%;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    color: #004d99;
+    margin-bottom: 15px;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+#about p, #blog article, #testimonials p, #resume p {
+    margin: 10px 0;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* About Me Section */
+#about {
+    width: 100%;
+    padding: 80px 10%;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 40%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.about-text h2 {
+    color: #004d99;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+#about p {
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Testimonials Section */
+#testimonials {
+    background-color: #f9f9f9;
+    padding: 40px 10%;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+#testimonials h2 {
+    color: #004d99;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+#testimonials p {
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Blog Section */
+#blog article {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Resume Link */
+#resume a {
+    color: #004d99;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#resume a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004d99;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-left h4, .footer-right h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #fff; 
+    font-weight: 600;
+}
+
+.footer-left p, .footer-right div a {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-right div {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.footer-right div a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Responsive design - for small screens */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-right {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .footer-left p, .footer-right div a {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+}
+/* Responsive Design - Media Queries */
+@media (max-width: 768px) {
+    /* Adjust sections to stack vertically */
+    #about, #testimonials {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    /* Stack footer items */
+    footer div {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    footer p, footer a {
+        margin: 5px 0;
+    }
+
+    /* Reduce navigation link spacing for mobile */
+    header nav a {
+        margin: 0 8px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Stack navigation links vertically for mobile */
+    header nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    header nav a {
+        margin: 5px 0;
+        padding: 5px;
+        font-size: 1em;
+    }
+
+    /* Footer adjustments for mobile */
+    footer div {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
